@@ -1,0 +1,164 @@
+/* Reset some default styles for consistency */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%; /* Ensure the content spans the full width */
+}
+
+.left-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.bold-text {
+    font-family: 'Inter', sans-serif; /* Use Inter font for bold text */
+    font-weight: 800;
+}
+
+.gradient-text {
+    background: linear-gradient(30deg, #30c67c, #82f4b1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.custom-text {
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand font for .fm text */
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: auto; /* Pushes the .fm text to the right */
+}
+
+/* Style the Sign In link */
+.sign-in-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the sign in button to the right */
+}
+
+.sign-in {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif; /* Use Trebuchet MS font for Sign In link */
+    font-size: 18px;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    background: linear-gradient(to right, #30c67c, #3ba571);
+    background-color: #30c67c;
+}
+
+.sign-in:hover {
+    background: linear-gradient(to right, #5dcc8f, #62b086);
+    background-color: #5dcc8f;
+}
+
+.sign-in:active {
+    transform: scale(0.95);
+}
+
+/* Centered text in the main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px); /* Adjust the value based on your header and footer height */
+    background-color: #1e1e1f;
+    position: relative; /* Add this line to allow positioning of particles */
+    overflow: hidden; /* Hide overflow to prevent particles from going outside */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.centered-text h1 {
+    font-size: 65px; /* Increased font size to 50px */
+    color: #fff; /* Choose a color that contrasts well with the background */
+}
+
+.centered-text p {
+    font-size: 30px; /* Increased font size to 30px */
+    color: #fff; /* Choose a color that contrasts well with the background */
+}
+
+/* Style the footer */
+footer {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    display: flex; /* Add this line to enable flexbox */
+    align-items: center; /* Add this line to vertically center the content */
+    justify-content: center; /* Add this line to horizontally center the content */
+}
+
+/* Style the footer icons */
+.footer-icons {
+    /* Remove the position: absolute; property */
+    /* Remove the bottom and right properties */
+    display: flex; /* Add this line to enable flexbox */
+    align-items: center; /* Add this line to vertically center the icons */
+}
+
+.footer-icons i {
+    font-size: 20px;
+    margin-left: 10px; /* Adjust as needed */
+    color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-text,
+    .gradient-text {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Style the particles canvas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Set a lower z-index to make sure particles are behind content */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Viewer</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/playlistsPage/playlist.css">
+    <script defer src="https://sdk.scdn.co/spotify-player.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="bold-text"><span class="gradient-text">sorted</span>.fm</h1>
+        <div class="sign-in-container" id="profile-container">
+            <a class="sign-in" href="#" onclick="authorizeSpotify()">Sign In with Spotify</a>
+            <img id="profile-picture">
+        </div>
+    </header>
+
+    <main>
+        <table id="playlist-table">
+            <thead>
+                <tr>
+                    <th>Playlist Name</th>
+                    <th>Owner</th>
+                    <th>Total Tracks</th>
+                </tr>
+            </thead>
+            <tbody id="playlist-body"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+        <div class="footer-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </footer>
+
+    <script src="./assets/js/playlistsPage/script.js"></script>
+</body>
+</html>

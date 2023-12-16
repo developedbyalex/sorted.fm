@@ -6,13 +6,13 @@
     <title>Spotify Playlist Viewer</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/playlistsPage/playlist.css">
     <script defer src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="https://kit.fontawesome.com/a2c15d1ebf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1 class="bold-text"><span class="gradient-text">sorted</span>.fm</h1>
         <div class="sign-in-container" id="profile-container">
             <a class="sign-in" href="#" onclick="authorizeSpotify()">Sign In with Spotify</a>
-            <img id="profile-picture">
         </div>
     </header>
 
@@ -21,8 +21,8 @@
             <thead>
                 <tr>
                     <th>Playlist Name</th>
-                    <th>Owner</th>
                     <th>Total Tracks</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody id="playlist-body"></tbody>

@@ -132,19 +132,21 @@ footer {
 }
 
 
-/* Add this section to style the dark-themed table */
+/* Add this section to style the table */
 table {
     width: 80%;
     border-collapse: collapse;
     margin: 20px;
     background-color: #2c2c2c; /* Dark background color */
     color: #fff; /* White text color */
+    table-layout: fixed; /* Fix the table layout to adjust to content */
 }
 
 th, td {
     border: 1px solid #555; /* Darker border color */
     padding: 12px;
     text-align: left;
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
 }
 
 th {
@@ -183,3 +185,25 @@ tbody tr:hover {
 body {
     overflow-x: hidden;
 }
+
+a.sort-button{
+    background: linear-gradient(to right,#23b955 ,#44c16d);
+    background-color: #23b955;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+   }
+   a.sort-button:hover{
+    background: linear-gradient(to right,#57c172 ,#67c883);
+    background-color: #57c172;
+   }
+   a.sort-button:active{
+    transform: scale(0.95);
+   }
